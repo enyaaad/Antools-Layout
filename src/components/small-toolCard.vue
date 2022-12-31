@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "toolCard",
+  name: "small-toolCard",
   props:{
     toolName: String,
     imageURL: String,
@@ -9,8 +9,8 @@ export default {
     isSelected: Boolean
   },
 }
-
 </script>
+
 <template>
   <div class="tool-card" v-if="!isSelected">
     <div class="tool-card-content">
@@ -70,14 +70,15 @@ export default {
   </div>
 </template>
 
+
 <style lang="sass" scoped>
 @import "../styles/_variables.sass"
 .tool-card
-  width: 330px
+  width: 290px
   border-radius: 15px
   border: none
-  padding: 33px
   .tool-card-content
+    padding: 33px
     .card-top
       display: flex
       flex-direction: row
@@ -128,7 +129,6 @@ export default {
         background: none
         color: $font-color-decorator
 .selected-card
-  padding: 33px
   background-color: $background-color-selected-cards
   position: relative
   bottom: 20px

@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import ToolCard from "./toolCard.vue";
+import SmallToolCard from "./small-toolCard.vue";
+import SliderPage from "./slider-page.vue";
 </script>
 
 <template>
@@ -47,17 +49,41 @@ import ToolCard from "./toolCard.vue";
             </section>
 
             <div class="popular-tools-cards">
-              <tool-card tool-name="FIGMA" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." dist="Free" :is-selected="false">
+              <tool-card tool-name="FIGMA"
+                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         dist="Free"
+                         image-u-r-l="src/assets/svg/icons/icon_FIGMA.svg"
+                         :is-selected="false">
               </tool-card>
-              <tool-card tool-name="Sketch" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." dist="Trial & Paid" :is-selected="false">
+              <tool-card tool-name="Notion"
+                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         dist="Free & Paid"
+                         image-u-r-l="src/assets/svg/icons/icon_Notion.svg"
+                         :is-selected="false">
               </tool-card>
-              <tool-card tool-name="Visual Studio Code" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." dist="Free" :is-selected="false">
+              <tool-card tool-name="Sketch"
+                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         dist="Trial & Paid"
+                         image-u-r-l="src/assets/svg/icons/icon_Sketch.svg"
+                         :is-selected="true">
               </tool-card>
-              <tool-card tool-name="Notion" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." dist="Free & Paid" :is-selected="false">
+              <tool-card tool-name="Slack"
+                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         dist="Free & Paid"
+                         image-u-r-l="src/assets/svg/icons/icon_Slack.svg"
+                         :is-selected="false">
               </tool-card>
-              <tool-card tool-name="Slack" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." dist="Free & Paid" :is-selected="false">
+              <tool-card tool-name="Visual Studio Code"
+                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         dist="Free"
+                         image-u-r-l="src/assets/svg/icons/icon_vscode.svg"
+                         :is-selected="false">
               </tool-card>
-              <tool-card tool-name="Invision" description="Lorem ipsum dolor sit amet, consectetur adipiscing elit." dist="Free & Paid" :is-selected="false">
+              <tool-card tool-name="Invision"
+                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                         dist="Free & Paid"
+                         image-u-r-l="src/assets/svg/icons/icon_Invision.svg"
+                         :is-selected="false">
               </tool-card>
             </div>
 
@@ -68,13 +94,13 @@ import ToolCard from "./toolCard.vue";
       <div class="layout-trusted-brands">
         <div class="trusted-brands-content">
 
-          <h3 class="trusted-brands-title">Trused more than 150+ brand</h3>
+          <h3 class="trusted-brands-title">Trusted more than 150+ brand</h3>
 
           <div class="trusted-brands-images">
-            <img src="" alt="microsoftLogo">
-            <img src="" alt="googleLogo">
-            <img src="" alt="slackLogo">
-            <img src="" alt="wordpressLogo">
+            <img src="/src/assets/svg/icons/logos_microsoft.svg" alt="microsoftLogo">
+            <img src="/src/assets/svg/icons/logos_google.svg" alt="googleLogo">
+            <img src="/src/assets/svg/icons/logos_slack.svg" alt="slackLogo">
+            <img src="/src/assets/svg/icons/logos_wordpress.svg" alt="wordpressLogo">
           </div>
 
         </div>
@@ -85,44 +111,60 @@ import ToolCard from "./toolCard.vue";
 
           <article class="newcomers-tools-info">
             <h1>Newcomer Tools</h1>
-            <p>Wow! see the latest update of the most recommended tools
-            from reliable designers and developers</p>
+            <div class="info-text">
+              <p>Wow! see the latest update of the most</p>
+              <p>recommended tools from reliable designers </p>
+              <p>and developers</p>
+            </div>
             <button class="info-button">Explore more</button>
           </article>
 
           <div class="newcomers-tools-cards">
-            <tool-card></tool-card>
-            <tool-card></tool-card>
-            <tool-card></tool-card>
-            <tool-card></tool-card>
+            <div class="top-cards">
+              <small-tool-card tool-name="Zeplin"
+                               dist="Free & Paid"
+                               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                               image-u-r-l="src/assets/svg/icons/icon-zeplin.svg"
+                               :is-selected="false">
+              </small-tool-card>
+              <small-tool-card tool-name="PHPStorm"
+                               dist="Free"
+                               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                               image-u-r-l="src/assets/svg/icons/icon-phpstorm.svg"
+                               :is-selected="true">
+              </small-tool-card>
+            </div>
+            <div class="bot-cards">
+              <small-tool-card tool-name="Toolbox"
+                               dist="Free"
+                               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                               image-u-r-l="src/assets/svg/icons/icon-toolbox.svg"
+                               :is-selected="false">
+              </small-tool-card>
+              <small-tool-card tool-name="Procreate"
+                               dist="Paid"
+                               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                               image-u-r-l="src/assets/svg/icons/icon-procreate.svg"
+                               :is-selected="false">
+              </small-tool-card>
+            </div>
           </div>
 
         </div>
       </div>
 
       <div class="layout-stories">
+        <img src="src/assets/svg/chevron-left.svg" alt="left-arrow">
         <div class="stories-content">
-
-          <img src="" alt="left-arrow">
-          <img src="" alt="right-arrow">
-
-          <div class="stories-person">
-            <img src="" alt="person">
-            <div class="person-card">
-              <h2 class="person-name">Ronald Richards</h2>
-              <h4 class="person-job">Product Manager</h4>
-            </div>
-          </div>
-
-          <div class="stories-text">
-            <img src="" alt="mark">
-            <p>Incididunt cillum do sint sint enim ullamco id deserunt mollit qui 
-              reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit 
-              labore occaecat do deserunt Lorem magna officia incididunt consectetur amet. 
-              Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non 
-              laboris id qui ad.</p>
-          </div>
-
+          <slider-page name="Ronald Richards"
+                       profession="Product Manager"
+                       image-u-r-l="src/assets/svg/ronaldRichardsImage.svg"
+                       story-text="Incididunt cillum do sint sint enim ullamco id deserunt mollit qui
+          reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit
+          labore occaecat do deserunt Lorem magna officia incididunt consectetur amet.
+          Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non
+          laboris id qui ad.">
+          </slider-page>
           <div class="stories-page">
             <div class="page-one">one</div>
             <div class="page-two">two</div>
@@ -130,6 +172,7 @@ import ToolCard from "./toolCard.vue";
           </div>
 
         </div>
+        <img src="src/assets/svg/chevron-right.svg" alt="right-arrow">
       </div>
 
       <div class="layout-join-us">
@@ -197,7 +240,7 @@ import ToolCard from "./toolCard.vue";
           font-family: $font-style-attention
           .search-input
             color: $font-color-main
-            padding: 21px 55px 22px 55px
+            padding: 21px 160px 22px 55px
             border: none
             width: 500px
             border-radius: 15px
@@ -230,9 +273,13 @@ import ToolCard from "./toolCard.vue";
     .layout-popular-tools
       display: flex
       flex-direction: column
-      padding-top: 200px
+      padding: 200px 100px 200px 100px
       align-items: center
       .popular-tools-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-family: $font-style-title
         .popular-tools-title
           display: flex
           flex-direction: column
@@ -250,9 +297,93 @@ import ToolCard from "./toolCard.vue";
             font-size: 18px
             color: $font-color-decorator
         .popular-tools-cards
+          overflow: hidden
+          padding-top: 110px
           display: grid
-          grid-template-rows: 200px 200px
+          grid-template-rows: 320px 320px
           grid-auto-flow: column
-          grid-gap: 5px
-          overflow: auto
+          grid-gap: 100px 25px
+          padding-bottom: 100px
+        .popular-tools-loadMore
+          color: #FF6E30
+          cursor: pointer
+          font-family: inherit
+          font-size: 20px
+          font-weight: normal
+          border-radius: 8px
+          background: none
+          height: 64px
+          width: 184px
+          border: 1px solid #343B40
+    .layout-trusted-brands
+      display: flex
+      justify-content: center
+      padding-bottom: 200px
+      .trusted-brands-content
+        display: flex
+        flex-direction: column
+        align-items: center
+        padding: 55px 82px 55px 82px
+        background-color: #22292F
+        border-radius: 25px
+        width: 80%
+        .trusted-brands-title
+          color: $font-color-main
+          font-weight: normal
+          padding-bottom: 55px
+        .trusted-brands-images
+          display: flex
+          width: 100%
+          justify-content: space-between
+    .layout-newcomers-tools
+      padding: 0 110px 200px 110px
+      display: flex
+      flex-direction: column
+      .newcomers-tools-content
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        .newcomers-tools-cards
+          display: flex
+          flex-direction: column
+          .top-cards
+            display: flex
+            flex-direction: row
+          .bot-cards
+            display: flex
+            flex-direction: row
+      .newcomers-tools-info
+        font-family: $font-style-title
+        h1
+          color: $font-color-main
+          font-weight: normal
+          font-size: 48px
+          line-height: 130%
+          padding-bottom: 30px
+        .info-text
+          padding-bottom: 60px
+          p
+            color: $font-color-decorator
+            font-weight: normal
+            font-family: $font-style-title
+            line-height: 30px
+            font-size: 18px
+        .info-button
+          height: 58px
+          width: 198px
+          background-color: $background-color-buttons
+          border-radius: 8px
+          border: none
+          color: #FDF5FF
+          font-family: inherit
+          font-size: 16px
+          font-weight: normal
+          cursor: pointer
+    .layout-stories
+      padding: 0 80px
+      display: flex
+      .stories-content
+        display: flex
+        flex-direction: column
+        align-items: center
 </style>

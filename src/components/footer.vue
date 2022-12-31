@@ -11,8 +11,8 @@ export default {
 
       <section class="footer-copyright">
 
-        <div class="copyright-logo">
-          <img src="" alt="antoolsLogo">
+        <div class="footer-logo">
+          <img src="/src/assets/svg/logo.svg" alt="">
           <h1>antools.</h1>
         </div>
         <div class="copyright-text">
@@ -44,12 +44,84 @@ export default {
         <p>Blog</p>
       </section>
 
-
     </div>
   </footer>
 </template>
 
 
-<style scoped>
+<style lang="sass" scoped>
+@import "../styles/_variables.sass"
+footer
+  border: 0.5px #40464B solid
+  padding: 70px 230px 100px 110px
+  .footer-content
+    display: flex
+    flex-direction: row
+    width: 100%
+    justify-content: space-between
+    .footer-copyright
+
+      .footer-logo
+        display: flex
+        align-items: center
+        padding-bottom: 25px
+        h1
+          padding-left: 12px
+          color: $font-color-main
+          font-size: 22px
+          font-weight: normal
+          align-items: center
+      .copyright-text
+        h5
+          padding-bottom: 21px
+          font-family: $font-style-title
+          font-size: 16px
+          color: $font-color-main
+        p
+          line-height: 25px
+          font-family: $font-style-regular
+          color: $font-color-decorator
+    .footer-contact-us
+      display: flex
+      flex-direction: column
+      h1
+        padding-bottom: 20px
+        font-family: $font-style-title
+        font-size: 20px
+        font-weight: normal
+        color: $font-color-main
+      p
+        font-family: $font-style-title
+        padding-bottom: 10px
+        color: $font-color-decorator
+        font-size: 16px
+    .footer-categories
+      display: flex
+      flex-direction: column
+      h1
+        padding-bottom: 20px
+        font-weight: normal
+        font-size: 20px
+        font-family: $font-style-title
+        color: $font-color-main
+      p
+        padding-bottom: 10px
+        font-size: 16px
+        color: $font-color-decorator
+        font-family: $font-style-title
+    .footer-company-info
+      display: flex
+      flex-direction: column
+      h1
+        padding-bottom: 20px
+        color: $font-color-main
+        font-size: 20px
+        font-weight: normal
+      p
+        font-size: 16px
+        padding-bottom: 10px
+        color: $font-color-decorator
+        font-family: $font-style-title
+
 
 </style>
