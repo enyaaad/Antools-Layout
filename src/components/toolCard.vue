@@ -1,10 +1,24 @@
 <script>
 export default {
-  name: "toolCard"
+  name: "toolCard",
+  props:{
+    toolName:String,
+    dist: String,
+    description: String,
+    isSelected: Boolean
+  }
 }
+
+
 </script>
 <template>
-  <p>toolcard</p>
+  <div class="toolcard">
+    <div class="toolcard-content">
+      <p>{{toolName}}</p>
+      <p>{{description}}</p>
+      <p>{{dist}}</p>
+    </div>
+  </div>
 </template>
 
 <style scoped>
