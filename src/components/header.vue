@@ -14,10 +14,10 @@ export default {
       </div>
 
       <nav class="header-nav">
-        <a href="">Home</a>
-        <a href="">Categories</a>
-        <a href="">My Collections</a>
-        <a href="">Blog</a>
+        <a href="" class="nav-element">Home</a>
+        <a href="" class="nav-element">Categories</a>
+        <a href="" class="nav-element">My Collections</a>
+        <a href="" class="nav-element">Blog</a>
       </nav>
 
       <div class="header-buttons">
@@ -57,6 +57,8 @@ header
       font-family: $font-style-title
       text-decoration: none
       color: $font-color-decorator
+    .nav-element:active
+      animation: buttonAnim 1s ease
   .header-buttons
     display: flex
     align-items: center
@@ -83,4 +85,6 @@ header
       font-size: 16px
       font-weight: bold
       cursor: pointer
+    .registerButton:active
+      animation: buttonAnim 1s ease
 </style>

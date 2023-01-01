@@ -42,6 +42,7 @@ export default {
 
   <div class="tool-card selected-card" v-else>
     <div class="tool-card-content">
+      <img src="/src/assets/svg/orangeLight.svg" alt="" class="orange-light">
       <div class="card-top">
 
         <img :src="imageURL" alt="">
@@ -60,7 +61,7 @@ export default {
 
       <div class="card-lower-icons">
         <div class="icons">
-          <img src="/src/assets/svg/icons/icon-heart-active.svg" alt="">
+          <img src="/src/assets/svg/icons/flat-color-icons_like.svg" alt="">
           <img src="/src/assets/svg/icons/icon-folder-active.svg" alt="">
         </div>
         <button type="button" class="card-lower-button">Visit</button>
@@ -120,6 +121,8 @@ export default {
         font-size: 16px
         font-weight: bold
         cursor: pointer
+      .card-lower-button:active
+        animation: buttonAnim 1s ease
       .card-lower-button-innactive
         font-family: inherit
         font-size: 16px
@@ -128,14 +131,18 @@ export default {
         border: none
         background: none
         color: $font-color-decorator
+      .card-lower-button-innactive:active
+        animation: buttonAnim 1s ease
 .selected-card
   background-color: $background-color-selected-cards
   position: relative
   bottom: 20px
 .tool-card
+  overflow: hidden
   .tool-card-content
     .card-top
       .selected
+        z-index: 1
         h1
           color: #E9EAEA
         h3
@@ -145,4 +152,12 @@ export default {
     .selected
       h4
         color: $font-color-selected-card-text
+    .orange-light
+      filter: blur(25px)
+      z-index: 0
+      position: absolute
+      top: -100px
+      right: -100px
+
+
 </style>

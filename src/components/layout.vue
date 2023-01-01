@@ -163,12 +163,13 @@ import SliderPage from "./slider-page.vue";
           reprehenderit do. Velit ex tempor cillum ad sint occaecat. Do nulla velit
           labore occaecat do deserunt Lorem magna officia incididunt consectetur amet.
           Sunt consectetur veniam minim ex commodo sint non. Occaecat aute officia excepteur non
-          laboris id qui ad.">
+          laboris id qui ad."
+          class="stories-item">
           </slider-page>
           <div class="stories-page">
-            <div class="page-one">one</div>
-            <div class="page-two">two</div>
-            <div class="page-three">three</div>
+            <div class="page-number"></div>
+            <div class="page-number selected"></div>
+            <div class="page-number"></div>
           </div>
 
         </div>
@@ -184,7 +185,7 @@ import SliderPage from "./slider-page.vue";
             <p>Designer and Developer</p>
           </div>
 
-          <div class="join-us-button">
+          <div class="join-us-button-input">
             <input type="search" class="join-us-input" placeholder="Enter your email...">
             <button type="button" class="join-us-button">Join Us</button>
           </div>
@@ -256,7 +257,7 @@ import SliderPage from "./slider-page.vue";
           padding-left: 18px
         .search-button
           position: absolute
-          right: 70px
+          right: 65px
           height: 48px
           width: 118px
           background-color: $background-color-buttons
@@ -267,6 +268,8 @@ import SliderPage from "./slider-page.vue";
           font-size: 16px
           font-weight: bold
           cursor: pointer
+        .search-button:active
+          animation: buttonAnim 1s ease
       .preview-socials
         position: absolute
         bottom: 0
@@ -315,6 +318,8 @@ import SliderPage from "./slider-page.vue";
           height: 64px
           width: 184px
           border: 1px solid #343B40
+        .popular-tools-loadMore:active
+          animation: buttonAnim 1s ease
     .layout-trusted-brands
       display: flex
       justify-content: center
@@ -379,11 +384,88 @@ import SliderPage from "./slider-page.vue";
           font-size: 16px
           font-weight: normal
           cursor: pointer
+        .info-button:active
+          animation: buttonAnim 1s ease
     .layout-stories
-      padding: 0 80px
+      padding: 0 80px 250px 80px
       display: flex
       .stories-content
         display: flex
         flex-direction: column
         align-items: center
+        .stories-item
+          padding-bottom: 35px
+        .stories-page
+          display: flex
+          flex-direction: row
+          align-items: center
+          .page-number
+            background-color: #2B3036
+            height: 6px
+            width: 45px
+            margin: 0 18px
+            border-radius: 4px
+          .selected
+            background-color: #FF6E30
+            height: 8px
+    .layout-join-us
+      padding-bottom: 250px
+      display: flex
+      flex-direction: column
+      align-items: center
+      .join-us-content
+        .join-us-title
+          padding-bottom: 100px
+          display: flex
+          flex-direction: column
+          align-items: center
+          h1
+            padding-bottom: 25px
+            font-size: 48px
+            font-weight: normal
+            font-family: $font-style-title
+            line-height: 130%
+            color: $font-color-main
+          p
+            font-family: $font-style-title
+            line-height: 30px
+            font-weight: normal
+            font-size: 18px
+            color: $font-color-decorator
+        .join-us-button-input
+          display: flex
+          align-items: center
+          position: relative
+          font-family: $font-style-attention
+          .join-us-input
+            color: $font-color-main
+            padding: 21px 160px 22px 25px
+            border: none
+            width: 500px
+            border-radius: 15px
+            background-color: #283036
+            outline: none
+          .join-us-input::-webkit-search-decoration,
+          .join-us-input::-webkit-search-cancel-button,
+          .join-us-input::-webkit-search-results-button,
+          .join-us-input::-webkit-search-results-decoration
+            display: none
+          .join-us-button
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            right: 60px
+            height: 48px
+            width: 130px
+            background-color: $background-color-buttons
+            border-radius: 8px
+            border: none
+            color: #FDF5FF
+            font-family: inherit
+            font-size: 16px
+            font-weight: bold
+            cursor: pointer
+          .join-us-button:active
+            animation: buttonAnim 1s ease
 </style>
