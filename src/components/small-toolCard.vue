@@ -32,8 +32,8 @@ export default {
 
       <div class="card-lower-icons">
         <div class="icons">
-          <img src="/src/assets/svg/icons/icon-like.svg" alt="">
-          <img src="/src/assets/svg/icons/icon-folder-innactive.svg" alt="">
+          <a href=""><img src="/src/assets/svg/icons/icon-like.svg" alt=""></a>
+          <a href=""><img src="/src/assets/svg/icons/icon-folder-innactive.svg" alt=""></a>
         </div>
         <button type="button" class="card-lower-button-innactive">Visit</button>
       </div>
@@ -61,8 +61,8 @@ export default {
 
       <div class="card-lower-icons">
         <div class="icons">
-          <img src="/src/assets/svg/icons/flat-color-icons_like.svg" alt="">
-          <img src="/src/assets/svg/icons/icon-folder-active.svg" alt="">
+          <a href=""><img src="/src/assets/svg/icons/flat-color-icons_like.svg" alt=""></a>
+          <a href=""><img src="/src/assets/svg/icons/icon-folder-active.svg" alt=""></a>
         </div>
         <button type="button" class="card-lower-button">Visit</button>
       </div>
@@ -108,7 +108,7 @@ export default {
       .icons
         display: flex
         flex-direction: row
-        align-items: stretch
+        align-items: center
       .card-lower-button
         align-items: end
         height: 42px
