@@ -15,7 +15,10 @@ export default {
 
       <nav class="header-nav">
         <a href="" class="nav-element">Home</a>
-        <a href="" class="nav-element">Categories</a>
+        <div class="categories-element">
+          <a href="" class="nav-element">Categories</a>
+          <img src="src/assets/svg/chevron-down.svg" alt="">
+        </div>
         <a href="" class="nav-element">My Collections</a>
         <a href="" class="nav-element">Blog</a>
       </nav>
@@ -59,6 +62,10 @@ header
       color: $font-color-decorator
     .nav-element:active
       animation: buttonAnim 1s ease
+  .categories-element
+    display: flex
+    align-items: center
+
   .header-buttons
     display: flex
     align-items: center

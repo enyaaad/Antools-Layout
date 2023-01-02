@@ -83,10 +83,7 @@ export default {
         width: 260px
         border-radius: 8px
         backdrop-filter: blur(50px)
-        background-clip: padding-box, border-box
-        border: solid 1px
-        border-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0))
-        background-origin: border-box
+        border: solid 1px transparent
         z-index: 1
         overflow: hidden
         .card-content

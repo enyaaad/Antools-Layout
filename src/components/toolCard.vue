@@ -137,6 +137,7 @@ export default {
   background-color: $background-color-selected-cards
   position: relative
   bottom: 20px
+  border: 1px solid transparent
 .tool-card
   overflow: hidden
   .tool-card-content

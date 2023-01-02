@@ -93,6 +93,7 @@ import SliderPage from "./slider-page.vue";
 
       <div class="layout-trusted-brands">
         <div class="trusted-brands-content">
+          <img src="/src/assets/svg/redLight.svg" alt="" class="red-light">
 
           <h3 class="trusted-brands-title">Trusted more than 150+ brand</h3>
 
@@ -325,6 +326,7 @@ import SliderPage from "./slider-page.vue";
       justify-content: center
       padding-bottom: 200px
       .trusted-brands-content
+        position: relative
         display: flex
         flex-direction: column
         align-items: center
@@ -340,6 +342,11 @@ import SliderPage from "./slider-page.vue";
           display: flex
           width: 100%
           justify-content: space-between
+        .red-light
+          position: absolute
+          left: 0
+          top: 0
+          border-radius: 25px
     .layout-newcomers-tools
       padding: 0 110px 200px 110px
       display: flex
